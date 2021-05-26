@@ -22,9 +22,7 @@ const Header = (props) => {
         <img className="logo" src={Logo} alt="logo" />
         <Nav pills>
           <NavItem>
-            <NavLink href="#" active>
-              Home
-            </NavLink>
+            <NavLink href="#">Home</NavLink>
           </NavItem>
           <Dropdown nav isOpen={dropDownOpen} toggle={toggle}>
             <DropdownToggle nav caret>
@@ -32,20 +30,51 @@ const Header = (props) => {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem header>Social Media</DropdownItem>
-              <DropdownItem>Instagram</DropdownItem>
-              <DropdownItem>Twitter</DropdownItem>
+              <DropdownItem>
+                <NavLink
+                  target="_blank"
+                  href="https://www.instagram.com/fuckfacepod/?hl=en"
+                >
+                  Instagram
+                </NavLink>
+              </DropdownItem>
+              <DropdownItem>
+                <NavLink
+                  target="_blank"
+                  href="https://twitter.com/fuckfacepod?lang=en"
+                >
+                  Twitter
+                </NavLink>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Discord</DropdownItem>
+              <DropdownItem>
+                <NavLink
+                  target="_blank"
+                  href="https://discord.com/channels/752965395492896810/"
+                >
+                  Discord
+                </NavLink>
+              </DropdownItem>
             </DropdownMenu>
           </Dropdown>
           <NavItem>
             <NavLink href="#">Cast</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Listen</NavLink>
+            <NavLink
+              target="_blank"
+              href="https://roosterteeth.com/series/f-kface"
+            >
+              Listen
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Merch</NavLink>
+            <NavLink
+              target="_blank"
+              href="https://store.roosterteeth.com/collections/f-kface"
+            >
+              Merch
+            </NavLink>
           </NavItem>
         </Nav>
       </Jumbotron>

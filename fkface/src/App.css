@@ -53,10 +53,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 .logo {
-  background-color: black;
   width: 12%;
   color: black;
   margin: 0 auto;
@@ -64,4 +65,25 @@
 
 ul {
   margin: 0 auto;
+  margin-bottom: 1%;
+}
+
+ul li {
+  margin-top: 2%;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item a:visited {
+  color: white;
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+.dropdown-menu a:visited {
+  color: black;
 }
