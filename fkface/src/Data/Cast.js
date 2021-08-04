@@ -1,12 +1,12 @@
 import { v4 as uuid } from "uuid";
-import Geoff from "../Assets/geoffRamsey";
-import Gavin from "../Assets/Gavin";
-import Andrew from "../Assets/Andrew";
+// import Geoff from "../Assets/geoffRamsey";
+// import Gavin from "../Assets/Gavin";
+// import Andrew from "../Assets/Andrew";
 
 export default [
   {
     id: uuid(),
-    image: Geoff,
+    //image: Geoff,
     name: "Geoff Ramsey",
     status: "Host",
     twitterHandle: "@GeoffLRamsey",
@@ -15,7 +15,7 @@ export default [
   },
   {
     id: uuid(),
-    image: Gavin,
+    //image: Gavin,
     name: "Gavin Free",
     status: "Co Host",
     twitterHandle: "@GavinFree",
@@ -28,7 +28,7 @@ export default [
   },
   {
     id: uuid(),
-    image: Andrew,
+    //image: Andrew,
     name: "Andrew Panton / Raymond Somer",
     status: "Co Host",
     twitterHandle: "@andrewpanton",

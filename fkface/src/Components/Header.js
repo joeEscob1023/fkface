@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Cast from './Cast';
+import { Switch, Link } from "react-router-dom";
 
 import Logo from "../Assets/ffaceLogo.png";
 import {
@@ -11,7 +13,6 @@ import {
   DropdownMenu,
   NavLink,
 } from "reactstrap";
-import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const [dropDownOpen, setDropDownOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = (props) => {
         <img className="logo" src={Logo} alt="logo" />
         <Nav pills>
           <NavItem>
-            <NavLink href="#">Home</NavLink>
+            <NavLink href="/home">Home</NavLink>
           </NavItem>
           <Dropdown nav isOpen={dropDownOpen} toggle={toggle}>
             <DropdownToggle nav caret>
@@ -58,16 +59,21 @@ const Header = (props) => {
             </DropdownMenu>
           </Dropdown>
           <NavItem>
-            <NavLink href="#">Cast</NavLink>
+           
+            <NavLink href="/cast">Cast</NavLink>
+      
           </NavItem>
-          <NavItem>
-            <NavLink
-              target="_blank"
-              href="https://roosterteeth.com/series/f-kface"
-            >
-              Listen
-            </NavLink>
-          </NavItem>
+          
+          <Switch>
+            <NavItem>
+              <NavLink
+                target="_blank"
+                href="https://roosterteeth.com/series/f-kface"
+              >
+                Listen
+              </NavLink>
+            </NavItem>
+          </Switch>
           <NavItem>
             <NavLink
               target="_blank"
