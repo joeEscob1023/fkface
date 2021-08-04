@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Cast from './Cast';
-import { Switch, Link } from "react-router-dom";
+import { Switch } from "react-router-dom";
 
 import Logo from "../Assets/ffaceLogo.png";
 import {

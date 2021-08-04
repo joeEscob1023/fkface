@@ -7,7 +7,8 @@ const Cast = ({castArray}) => {
       <h1>{castArray.map((cast, id) => {
         return (
           <div key={id}>
-            {cast.name}
+            {cast.image} : {cast.name}
+            
           </div>
         )
       })}</h1>
