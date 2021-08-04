@@ -61,6 +61,16 @@
   margin: 0 auto;
 }
 
+/* 
+I'll come back and try to fix this.
+.ffbackground {
+  background-image: url("https://cdn.roosterteeth.com/image/upload/t_l/f_auto/3/f193cbb6-05c7-47fb-a400-1964dd2f23e3/original/1591034633.png");
+  background-position: center;
+  background-color: black;
+  color: black;
+  margin: 0 auto;
+} */
+
 .logo {
   width: 12%;
   color: black;

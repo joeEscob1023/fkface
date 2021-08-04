@@ -3,11 +3,13 @@ import {
   Card, CardText, CardBody, CardLink,
   CardTitle, CardSubtitle
 } from 'reactstrap';
+import fflogo from '../Assets/ffaceLogo.png'
 
 const Cast = ({castArray}) => {
   console.log(castArray);
   return (
     <div>
+      {/* <img className="ffbackground" src={fflogo} alt="logo" /> */}
       {castArray.map((cast, id) => {
         return (
           <Card key={id}>
@@ -19,8 +21,8 @@ const Cast = ({castArray}) => {
           {cast.image}
           <CardBody>
             <CardText>{cast.otherProductions}</CardText>
-            <CardLink href={`https://twitter.com/${cast.twitterHandle}`}>@{cast.twitterHandle}</CardLink>
-            <CardLink href={`https://www.instagram.com/${cast.instagramHandle}/?hl=en`}>@{cast.instagramHandle}</CardLink>
+            <CardLink target="_blank" href={`https://twitter.com/${cast.twitterHandle}`}><i class="fab fa-twitter"></i>{cast.twitterHandle}</CardLink>
+            <CardLink target="_blank" href={`https://www.instagram.com/${cast.instagramHandle}/?hl=en`}><i class="fab fa-instagram"></i>{cast.instagramHandle}</CardLink>
           </CardBody>
         </Card>
         )

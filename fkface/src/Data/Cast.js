@@ -32,7 +32,7 @@ export default [
     name: "Andrew Panton / Raymond Somer",
     status: "Co Host",
     twitterHandle: "andrewpanton",
-    instagramHandle: "Doesn't have one",
+    instagramHandle: "fuckfacepod",
     otherProductions: [
       "Rooster Teeth | ",
       "Achievement Hunter | ",
