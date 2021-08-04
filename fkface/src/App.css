@@ -57,6 +57,10 @@
   margin-top: 1%;
 }
 
+.image-margin {
+  margin: 0 auto;
+}
+
 .logo {
   width: 12%;
   color: black;
