@@ -3,7 +3,7 @@ import Geoff from "../Assets/geoffRamsey.jpeg";
 import Gavin from "../Assets/Gavin.jpeg";
 import Andrew from "../Assets/Andrew.jpeg";
 
-export default [
+const castInfo = [
   {
     id: uuid(),
     image: <img width={300} src={Geoff} className="image-margin" alt="geoff" />,
@@ -47,3 +47,5 @@ export default [
     ],
   },
 ];
+
+export default castInfo;
