@@ -49,6 +49,19 @@
   font-size: 3rem;
 }
 
+.home {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.home h2 {
+  font-family: monospace;
+}
+
+.home p {
+  font-family: monospace;
+}
+
 .jumbotron {
   display: flex;
   justify-content: center;
